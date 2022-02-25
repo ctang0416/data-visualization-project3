@@ -47,8 +47,8 @@ function App() {
   const maxDifferenceData = [{majorCat: "Psychology & Social Work", description: "Top major category that women more than men", data: maxWomen},
                              {majorCat: "Engineering", description: "Top major category that men more than women", data: maxMen},
                              {majorCat:"Physical Sciences", description: "The most balanced major catergory between men and women", data:minDifference},
-                             {majorCat:"women more than men", description: "major categories that have more women than men", data:differenceWomen.map(data => data>0)},
-                             {majorCat:"men more than women", description: "major categories that have more men than women", data:differenceMen.map(data => data>0)}]
+                             {majorCat:"women more than men", description: "Major categories that have more women than men", data:differenceWomen.map(data => data>0)},
+                             {majorCat:"men more than women", description: "Major categories that have more men than women", data:differenceMen.map(data => data>0)}]
   const top3Women = differenceWomen.slice().sort(function (a, b) { return b - a}).slice(0, 3);
   const top3Men = differenceMen.slice().sort(function (a, b) { return b - a}).slice(0, 3);
   console.log(maxDifferenceData.length)
